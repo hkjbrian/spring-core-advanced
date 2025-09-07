@@ -1,4 +1,4 @@
-package advanced.core.v0;
+package advanced.core.trace.hellotrace.v0;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Repository;

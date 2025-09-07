@@ -1,21 +1,22 @@
-package advanced.core.v1;
+package advanced.core.trace.hellotrace.v2;
 
+import advanced.core.trace.TraceId;
 import advanced.core.trace.TraceStatus;
-import advanced.core.trace.hellotrace.HelloTraceV1;
+import advanced.core.trace.hellotrace.HelloTraceV2;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Repository;
 
 @Repository
 @RequiredArgsConstructor
-public class OrderRepositoryV1 {
+public class OrderRepositoryV2 {
 
-    private final HelloTraceV1 trace;
+    private final HelloTraceV2 trace;
 
-    public void save(String itemId) {
+    public void save(TraceId traceId, String itemId) {
 
         TraceStatus status = null;
         try {
-            status = trace.begin("OrderRepository.save()");
+            status = trace.beginSync(traceId, "OrderRepository.save()");
 
             // 저장 로직
             if (itemId.equals("ex")) {
@@ -31,7 +32,7 @@ public class OrderRepositoryV1 {
     }
 
     private void sleep(int millis) {
-        try{
+        try {
             Thread.sleep(millis);
         } catch (InterruptedException e) {
             e.printStackTrace();
