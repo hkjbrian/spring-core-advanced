@@ -1,4 +1,4 @@
-package advanced.core.trace.hellotrace.v0;
+package advanced.core.app.v0;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;

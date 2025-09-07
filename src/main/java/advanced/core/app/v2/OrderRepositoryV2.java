@@ -1,4 +1,4 @@
-package advanced.core.trace.hellotrace.v2;
+package advanced.core.app.v2;
 
 import advanced.core.trace.TraceId;
 import advanced.core.trace.TraceStatus;
