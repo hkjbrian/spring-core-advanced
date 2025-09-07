@@ -1,4 +1,4 @@
-package advanced.core.v1.v0;
+package advanced.core.v1;
 
 import advanced.core.trace.TraceStatus;
 import advanced.core.trace.hellotrace.HelloTraceV1;
