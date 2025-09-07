@@ -24,7 +24,7 @@ public class TraceId {
         return UUID.randomUUID().toString().substring(0, 8); // UUID 앞 8자리만 사용
     }
 
-    private TraceId createNextLevel() {
+    public TraceId createNextLevel() {
         return new TraceId(id, level + 1);
     }
 
