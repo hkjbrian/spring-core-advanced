@@ -1,6 +1,7 @@
 package advanced.core;
 
 import advanced.core.config.AppV1Config;
+import advanced.core.config.AppV2Config;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
@@ -9,10 +10,9 @@ import org.springframework.context.annotation.Import;
 import java.util.Arrays;
 
 
-@Import(AppV1Config.class)
-@SpringBootApplication(scanBasePackages = "advanced.core.sec5")
+@Import({AppV1Config.class, AppV2Config.class})
+@SpringBootApplication(scanBasePackages = "advanced.core.sec5.app.v3")
 public class CoreApplication {
-
 
 	public static void main(String[] args) {
         ConfigurableApplicationContext ctx = SpringApplication.run(CoreApplication.class, args);
