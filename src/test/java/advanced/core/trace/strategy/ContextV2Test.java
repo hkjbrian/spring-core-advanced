@@ -1,8 +1,8 @@
 package advanced.core.trace.strategy;
 
-import advanced.core.trace.strategy.code.ContextV2;
-import advanced.core.trace.strategy.code.StrategyLogic1;
-import advanced.core.trace.strategy.code.StrategyLogic2;
+import advanced.core.trace.strategy.code.strategy.ContextV2;
+import advanced.core.trace.strategy.code.strategy.StrategyLogic1;
+import advanced.core.trace.strategy.code.strategy.StrategyLogic2;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
 
