@@ -1,8 +1,7 @@
-package advanced.core.app.v5;
+package advanced.core.sec4.app.v5;
 
 import advanced.core.trace.callback.TraceTemplate;
 import advanced.core.trace.logtrace.LogTrace;
-import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 @Service

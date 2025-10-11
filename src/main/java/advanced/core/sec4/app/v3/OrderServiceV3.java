@@ -1,16 +1,16 @@
-package advanced.core.app.v1;
+package advanced.core.sec4.app.v3;
 
 import advanced.core.trace.TraceStatus;
-import advanced.core.trace.hellotrace.HelloTraceV1;
+import advanced.core.trace.logtrace.LogTrace;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 @Service
 @RequiredArgsConstructor
-public class OrderServiceV1 {
+public class OrderServiceV3 {
 
-    private final OrderRepositoryV1 orderRepository;
-    private final HelloTraceV1 trace;
+    private final OrderRepositoryV3 orderRepository;
+    private final LogTrace trace;
 
     public void orderItem(String itemId) {
 

@@ -1,15 +1,17 @@
-package advanced.core.app.v1;
+package advanced.core.sec4.app.v3;
 
+import advanced.core.trace.TraceId;
 import advanced.core.trace.TraceStatus;
-import advanced.core.trace.hellotrace.HelloTraceV1;
+import advanced.core.trace.hellotrace.HelloTraceV2;
+import advanced.core.trace.logtrace.LogTrace;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Repository;
 
 @Repository
 @RequiredArgsConstructor
-public class OrderRepositoryV1 {
+public class OrderRepositoryV3 {
 
-    private final HelloTraceV1 trace;
+    private final LogTrace trace;
 
     public void save(String itemId) {
 
@@ -31,7 +33,7 @@ public class OrderRepositoryV1 {
     }
 
     private void sleep(int millis) {
-        try{
+        try {
             Thread.sleep(millis);
         } catch (InterruptedException e) {
             e.printStackTrace();
