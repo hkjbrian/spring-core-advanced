@@ -1,9 +1,6 @@
 package advanced.core;
 
-import advanced.core.config.AppV1Config;
-import advanced.core.config.AppV2Config;
-import advanced.core.config.v1_proxy.InterfaceProxyConfig;
-import advanced.core.config.v2_proxy.ConcreteProxyConfig;
+import advanced.core.config.v1_proxy.ConcreteProxyConfig;
 import advanced.core.trace.logtrace.LogTrace;
 import advanced.core.trace.logtrace.ThreadLocalLogTrace;
 import org.springframework.boot.SpringApplication;

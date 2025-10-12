@@ -1,4 +1,4 @@
-package advanced.core.config.v2_proxy.concrete_proxy;
+package advanced.core.config.v1_proxy.concrete_proxy;
 
 import advanced.core.sec5.app.v2.OrderRepositoryV2;
 import advanced.core.trace.TraceStatus;
