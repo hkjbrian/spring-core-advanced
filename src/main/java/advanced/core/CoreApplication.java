@@ -3,6 +3,7 @@ package advanced.core;
 import advanced.core.config.AppV1Config;
 import advanced.core.config.AppV2Config;
 import advanced.core.config.v1_proxy.InterfaceProxyConfig;
+import advanced.core.config.v2_proxy.ConcreteProxyConfig;
 import advanced.core.trace.logtrace.LogTrace;
 import advanced.core.trace.logtrace.ThreadLocalLogTrace;
 import org.springframework.boot.SpringApplication;
@@ -15,7 +16,8 @@ import java.util.Arrays;
 
 
 //@Import({AppV1Config.class, AppV2Config.class})
-@Import({InterfaceProxyConfig.class})
+//@Import({InterfaceProxyConfig.class})
+@Import({ConcreteProxyConfig.class})
 @SpringBootApplication(scanBasePackages = "advanced.core.sec5.app.v3")
 public class CoreApplication {
 
@@ -32,5 +34,4 @@ public class CoreApplication {
     public LogTrace logTrace() {
         return new ThreadLocalLogTrace();
     }
-
 }
