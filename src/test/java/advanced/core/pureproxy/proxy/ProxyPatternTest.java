@@ -1,9 +1,9 @@
-package advanced.core.pureproxy;
+package advanced.core.pureproxy.proxy;
 
-import advanced.core.pureproxy.code.CacheProxy;
-import advanced.core.pureproxy.code.ProxyPatternClient;
-import advanced.core.pureproxy.code.RealSubject;
-import advanced.core.pureproxy.code.Subject;
+import advanced.core.pureproxy.proxy.code.CacheProxy;
+import advanced.core.pureproxy.proxy.code.ProxyPatternClient;
+import advanced.core.pureproxy.proxy.code.RealSubject;
+import advanced.core.pureproxy.proxy.code.Subject;
 import org.junit.jupiter.api.Test;
 
 public class ProxyPatternTest {
