@@ -1,4 +1,4 @@
-package advanced.core.pureproxy.code;
+package advanced.core.pureproxy.proxy.code;
 
 public interface Subject {
 
